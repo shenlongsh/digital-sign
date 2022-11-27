@@ -4,6 +4,13 @@ if (workbox) {
 } else {  
     console.log(`Boo! Workbox didn't load 😬`);
 }
+// 修改默认配置
+workbox.core.setCacheNameDetails({
+    prefix: 'app',
+    suffix: 'v2',
+    precache: 'precache',
+    runtime: 'runtime'
+  })
 workbox.routing.registerRoute(
     /(.*)/,
     new workbox.strategies.CacheFirst()
