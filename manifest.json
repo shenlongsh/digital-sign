@@ -4,9 +4,40 @@
     "start_url": "/digital-sign/?from=homescreen",
     "icons": [
         {
-            "src": "/digital-sign/img/icons/icon_512x512.png",
+            "src": "/digital-sign/img/icons/icon-512x512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/digital-sign/img/icons/icon-192-192.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }, 
+        {
+            "src": "/digital-sign/img/icons/icon-144-144.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/digital-sign/img/icons/icon-96-96.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/digital-sign/img/icons/icon-72-72.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/digital-sign/img/icons/icon-48-48.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ],
     "display": "standalone",
