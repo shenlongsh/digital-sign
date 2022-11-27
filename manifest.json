@@ -1,10 +1,10 @@
 {
     "name": "数字签名及秘钥管理",
     "short_name": "数字签名",
-    "start_url": "/?from=homescreen",
+    "start_url": "/digital-sign/?from=homescreen",
     "icons": [
         {
-            "src": "/img/icons/icon_512x512.png",
+            "src": "/digital-sign/img/icons/icon_512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
