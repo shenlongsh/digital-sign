@@ -1,0 +1,15 @@
+{
+    "name": "数字签名及秘钥管理",
+    "short_name": "数字签名",
+    "start_url": "/?from=homescreen",
+    "icons": [
+        {
+            "src": "/img/icons/icon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1976d2"
+}
