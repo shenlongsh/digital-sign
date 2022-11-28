@@ -5,19 +5,32 @@ if (workbox) {
     console.log(`Boo! Workbox didn't load 😬`);
 }
 // 修改默认配置
-workbox.core.setCacheNameDetails({
-    prefix: 'app',
-    suffix: 'v2',
-    precache: 'precache',
-    runtime: 'runtime'
-  })
-workbox.routing.registerRoute(
-    /(.*)/,
-    new workbox.strategies.CacheFirst()
-  )
+// workbox.core.setCacheNameDetails({
+//     prefix: 'app',
+//     suffix: 'v2',
+//     precache: 'precache',
+//     runtime: 'runtime'
+//   })
+// workbox.routing.registerRoute(
+//     /(.*)/,
+//     new workbox.strategies.CacheFirst()
+//   )
 //创建一个cacheName
 const cacheName = 'cache-0-1-7';
 console.log('service worker 版本:', cacheName)
+
+async function cleanCaches() {
+  const mycaches = await caches.keys()
+  let str = 'mycaches:'+mycaches.toString()
+  console.log(str) 
+  for(let i=0;i<mycaches.length;i++) {
+    const result = await caches.delete(mycaches[i])
+    const rstr = 'delete:'+mycaches[i]+result
+    console.log(rstr)
+    str += '\n'+rstr
+  }
+}
+cleanCaches()
 // //需要缓存的资源列表
 // const cacheFiles = [
 //     '/digital-sign/',
