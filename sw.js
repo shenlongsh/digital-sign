@@ -16,7 +16,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.CacheFirst()
   )
 //创建一个cacheName
-const cacheName = 'cache-0-1-6';
+const cacheName = 'cache-0-1-7';
 console.log('service worker 版本:', cacheName)
 // //需要缓存的资源列表
 // const cacheFiles = [
