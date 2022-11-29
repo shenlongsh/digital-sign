@@ -7,7 +7,7 @@ if (workbox) {
 //修改默认配置
 workbox.core.setCacheNameDetails({
     prefix: 'app',
-    suffix: 'v2',
+    suffix: 'v3',
     precache: 'precache',
     runtime: 'runtime'
   })
@@ -40,7 +40,7 @@ console.log('service worker 版本:', cacheName)
 //     // './img/wang.jpeg',
 //     // './img/loading.svg'
 // ];
-//监听install事件, 完成安装时， 进行文件缓存
+// //监听install事件, 完成安装时， 进行文件缓存
 // self.addEventListener('install', function (e) {
 //     console.log('service worker 安装成功');
 //     const cacheOpenPromise = caches.open(cacheName).then(function (cache) {
