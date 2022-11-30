@@ -7,7 +7,7 @@ if (workbox) {
 //修改默认配置
 workbox.core.setCacheNameDetails({
     prefix: 'app',
-    suffix: 'v0',
+    suffix: 'v1',
     precache: 'precache',
     runtime: 'runtime'
   })
@@ -16,7 +16,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.CacheFirst()
   )
 //创建一个cacheName
-const cacheName = 'cache-0-2-0';
+const cacheName = 'cache-0-2-1';
 console.log('service worker 版本:', cacheName)
 
 // async function cleanCaches() {
