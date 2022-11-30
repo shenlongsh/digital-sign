@@ -47,6 +47,10 @@
             "purpose": "any"
         }
     ],
+    "related_applications": [{
+        "platform": "webapp",
+        "url": "https://kmhk.gitee.io/digital-sign/manifest.webmanifest"
+      }],
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#1976d2"
