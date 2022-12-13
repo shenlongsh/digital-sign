@@ -1,57 +1,61 @@
 {
     "name": "数字签名及秘钥管理",
     "short_name": "数字签名",
-    "start_url": "/digital-sign/?from=homescreen",
+    "start_url": "/digital-sign/?standalone=true",
+    "description":"此网页能创建RSA-PSS密钥对和ECDSA密钥对，并能用密钥对中的私钥对信息进行签名，然后用公钥进行验证。",
     "id": "?homescreen=1",
-    "icons": [
-        {
-          "src": "/digital-sign/img/icons/icon-64.png",
-          "sizes": "64x64",
-          "type": "image/png",
-          "purpose": "any"
-        },
-        {
-          "src": "/digital-sign/img/icons/icon-120.png",
-          "sizes": "120x120",
-          "type": "image/png",
-          "purpose": "any"
-        },
-        {
-          "src": "/digital-sign/img/icons/icon-144.png",
-          "sizes": "144x144",
-          "type": "image/png",
-          "purpose": "any"
-        },
-        {
-          "src": "/digital-sign/img/icons/icon-152.png",
-          "sizes": "152x152",
-          "type": "image/png",
-          "purpose": "any"
-        },
-        {
-          "src": "/digital-sign/img/icons/icon-180.png",
-          "sizes": "180x180",
-          "type": "image/png",
-          "purpose": "any"
-        },
-        {
-          "src": "/digital-sign/img/icons/icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png",
-          "purpose": "any"
-        },
-        {
-          "src": "/digital-sign/img/icons/icon-512.png",
-          "sizes": "512x512",
-          "type": "image/png",
-          "purpose": "any"
-        }
-      ],
-    "related_applications": [{
-        "platform": "webapp",
-        "url": "https://kmhk.gitee.io/digital-sign/manifest.webmanifest"
-      }],
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#1976d2"
-}
+    "theme_color": "#1976d2",
+    "lang": "en",
+    "icons": [
+      {
+            "src": "/digital-sign/img/icons/icon-512.png",
+            "sizes": "512x512",
+        "type": "image/png",
+            "purpose": "any"
+      },
+      {
+            "src": "/digital-sign/img/icons/icon-192.png",
+            "sizes": "192x192",
+        "type": "image/png",
+            "purpose": "any"
+      },
+      {
+            "src": "/digital-sign/img/icons/icon-maskable.png",
+            "sizes": "192x192",
+        "type": "image/png",
+            "purpose": "maskable"
+      },
+      {
+            "src": "/digital-sign/img/icons/icon-180.png",
+            "sizes": "180x180",
+        "type": "image/png",
+            "purpose": "any"
+      },
+      {
+            "src": "/digital-sign/img/icons/icon-152.png",
+            "sizes": "152x152",
+        "type": "image/png",
+            "purpose": "any"
+      },
+      {
+            "src": "/digital-sign/img/icons/icon-144.png",
+            "sizes": "144x144",
+        "type": "image/png",
+            "purpose": "any"
+      },
+      {
+            "src": "/digital-sign/img/icons/icon-120.png",
+            "sizes": "120x120",
+        "type": "image/png",
+            "purpose": "any"
+      },
+      {
+            "src": "/digital-sign/img/icons/icon-64.png",
+            "sizes": "64x64",
+        "type": "image/png",
+            "purpose": "any"
+      }
+    ]
+  }
