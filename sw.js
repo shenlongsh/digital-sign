@@ -16,7 +16,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.CacheFirst()
   )
 //创建一个cacheName
-const cacheName = 'cache-0-2-1';
+const cacheName = 'cache-0-2-2';
 console.log('service worker 版本:', cacheName)
 
 // async function cleanCaches() {
